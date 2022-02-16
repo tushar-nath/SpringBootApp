@@ -51,7 +51,7 @@ public class AuthController {
 	@Autowired
 	JwtUtils jwtUtils;
 
-	//login endpoint for signing up a user
+	//login endpoint for logging in a user
 	@PostMapping("/login")
 	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
 
